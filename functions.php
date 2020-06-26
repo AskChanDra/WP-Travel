@@ -24,6 +24,7 @@ $understrap_includes = array(
 	'/woocommerce.php',                     // Load WooCommerce functions.
 	'/editor.php',                          // Load Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
+	'/cpt/custom-post-type-travel-destination.php'			// Register Travel Destinaiton Custom Post Type
 );
 
 foreach ( $understrap_includes as $file ) {
