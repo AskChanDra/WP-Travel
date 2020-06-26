@@ -85,6 +85,39 @@ if ( ! function_exists( 'understrap_entry_footer' ) ) {
 	}
 }
 
+if ( ! function_exists( 'wp_travel_destination_entry_footer' ) ) {
+	/**
+	 * Prints HTML with meta information for the interests and comments.
+	 */
+	function wp_travel_destination_entry_footer() {
+		global $post;
+		// Hide interest text for pages and posts.
+		if ( 'destination' === get_post_type() ) {
+			/* translators: used between list items, there is a space after the comma */
+			$interests_list = get_the_term_list( $post->ID, 'interest', '', esc_html__( ', ', 'wp-travel' )  );
+			//var_dump($interests_list);die();
+			if ( $interests_list ) {
+				/* translators: %s: Interests of current destination */
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %s', 'wp-travel' ) . '</span>', $interests_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			}
+		}
+		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+			echo '<span class="comments-link">';
+			comments_popup_link( esc_html__( 'Leave a comment', 'wp-travel' ), esc_html__( '1 Comment', 'wp-travel' ), esc_html__( '% Comments', 'wp-travel' ) );
+			echo '</span>';
+		}
+		edit_post_link(
+			sprintf(
+				/* translators: %s: Name of current post */
+				esc_html__( 'Edit %s', 'wp-travel' ),
+				the_title( '<span class="sr-only">"', '"</span>', false )
+			),
+			'<span class="edit-link">',
+			'</span>'
+		);
+	}
+}
+
 if ( ! function_exists( 'understrap_categorized_blog' ) ) {
 	/**
 	 * Returns true if a blog has more than 1 category.

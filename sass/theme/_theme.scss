@@ -1,1 +1,13 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// Layout
+.full-width {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+// Pagination
+.pagination {
+    justify-content: flex-end;
+}

@@ -25,7 +25,7 @@ if ( ! function_exists('wp_travel_destination_post_type') ) {
             'add_new_item'          => __( 'Add New Item', 'wp-travel' ),
             'add_new'               => __( 'Add New', 'wp-travel' ),
             'new_item'              => __( 'New Item', 'wp-travel' ),
-            'edit_item'             => __( 'Edit Item', 'wp-travel' ),
+            'edit_item'             => __( 'Edit Destination', 'wp-travel' ),
             'update_item'           => __( 'Update Item', 'wp-travel' ),
             'view_item'             => __( 'View Item', 'wp-travel' ),
             'view_items'            => __( 'View Items', 'wp-travel' ),
