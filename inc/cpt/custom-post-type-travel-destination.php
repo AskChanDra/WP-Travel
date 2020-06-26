@@ -1,4 +1,12 @@
 <?php
+/**
+ * Custom Post Type 
+ *
+ * @package WP-Travel
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 if ( ! function_exists('wp_travel_destination_post_type') ) {
 
