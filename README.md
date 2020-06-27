@@ -105,6 +105,24 @@ The taxonomy page `taxonomy-interest.php`
 
 The `homepage.php` template to display custom home page with `destination` gird.
 
+### Admin Demo
+
+<p align="center">
+  <img alt="Admin destination" src="screenshot-1.png">
+</p>
+
+### Destination Grid
+
+<p align="center">
+  <img alt="Admin destination" src="screenshot-2.png">
+</p>
+
+
+### Single Destination
+
+<p align="center">
+  <img alt="Admin destination" src="screenshot-3.png">
+</p>
 
 ## Footnotes
 
