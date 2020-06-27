@@ -101,6 +101,10 @@ The archive page `archive-destination.php` and single page `single-destination.p
 
 The taxonomy page `taxonomy-interest.php`
 
+### Home Page Template 
+
+The `homepage.php` template to display custom home page with `destination` gird.
+
 
 ## Footnotes
 

@@ -32,6 +32,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</header><!-- .page-header -->
+
+					<div class="row">
+
 					<?php
 					// Start the loop.
 					while ( have_posts() ) {
@@ -42,8 +45,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'loop-templates/content', 'destination' );
+						get_template_part( 'loop-templates/content', 'entry' );
 					}
+					?>
+
+					</div>
+					<!-- /.row -->
+				<?php
 				} else {
 					get_template_part( 'loop-templates/content', 'none' );
 				}

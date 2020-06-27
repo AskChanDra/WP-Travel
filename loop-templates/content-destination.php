@@ -2,7 +2,7 @@
 /**
  * Post rendering content according to caller of get_template_part
  *
- * @package UnderStrap
+ * @package WP-Travel
  */
 
 // Exit if accessed directly.
@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-content">
 
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 
 		<?php
 		wp_link_pages(

@@ -25,7 +25,8 @@ $understrap_includes = array(
 	'/editor.php',                          				// Load Editor functions.
 	'/deprecated.php',                      				// Load deprecated functions.
 	'/cpt/custom-post-type-travel-destination.php',			// Register Travel Destinaiton Custom Post Type
-	'/cpt/custom-taxonomies-interests.php'					// Register Travel Interest Custom Taxonomies
+	'/cpt/custom-taxonomies-interests.php',					// Register Travel Interest Custom Taxonomies
+	'/theme-functions.php'									// Basic theme functions to modify functionality 
 );
 
 foreach ( $understrap_includes as $file ) {

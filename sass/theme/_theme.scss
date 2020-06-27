@@ -11,3 +11,22 @@
 .pagination {
     justify-content: flex-end;
 }
+
+// Single Post
+.entry-content{
+    padding: 3% 0;
+}
+
+// Widget
+.widget-title{
+    margin-top: 10px;
+}
+
+// Element
+dl, ol, ul {
+    list-style: none;
+    padding-left: 10px;
+}
+a:hover {
+    text-decoration: none;
+}
